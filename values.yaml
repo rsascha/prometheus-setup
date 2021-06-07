@@ -1,0 +1,24 @@
+#
+# Check: https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml
+#
+
+grafana:
+  adminPassword: nimda
+  ingress:
+    enabled: true
+    hosts: [ grafana-127-0-0-1.nip.io ]
+
+prometheus-node-exporter:
+    hostRootFsMount: false
+
+kubeControllerManager:
+  enabled: false
+
+kubeEtcd:
+  enabled: false
+
+kubeProxy:
+  enabled: false
+
+kubeScheduler:
+  enabled: false
